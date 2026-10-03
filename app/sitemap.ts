@@ -1,9 +1,3 @@
-<<<<<<< HEAD
 import type { MetadataRoute } from 'next';
 import menu from '@/lib/menu';
 export default function sitemap(): MetadataRoute.Sitemap { const base='https://aubonpainmenu.us'; const pages=['','menu','nutrition','locations','hours','ordering-tips','faq','about','contact','privacy','terms','disclaimer','editorial-policy']; return [...pages.map(path => ({url:`${base}/${path}`,lastModified:new Date(menu.lastVerified)})),...menu.categories.map(c=>({url:`${base}/menu/${c.slug}`,lastModified:new Date(menu.lastVerified)})),...menu.items.map(i=>({url:`${base}/item/${i.slug}`,lastModified:new Date(i.lastVerified)}))]; }
-=======
-import type { MetadataRoute } from 'next';
-import menu from '@/lib/menu';
-export default function sitemap(): MetadataRoute.Sitemap { const base='https://aubonpainmenu.us'; const pages=['','menu','nutrition','locations','hours','ordering-tips','faq','about','contact','privacy','terms','disclaimer','editorial-policy']; return [...pages.map(path => ({url:`${base}/${path}`,lastModified:new Date(menu.lastVerified)})),...menu.categories.map(c=>({url:`${base}/menu/${c.slug}`,lastModified:new Date(menu.lastVerified)})),...menu.items.map(i=>({url:`${base}/item/${i.slug}`,lastModified:new Date(i.lastVerified)}))]; }
->>>>>>> 15b473b8448200c67420739b6263e97808d963ee

@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 import Link from 'next/link';
 import menu from '@/lib/menu';
 import PageIntro from '@/components/PageIntro';
 export const metadata = { title: 'Au Bon Pain Menu Categories' };
 export default function MenuPage(){ return <main className="container"><PageIntro eyebrow="Browse before you order" title="The Au Bon Pain menu, organized for real decisions."><p>We group the menu the way people tend to think about it: a warm sandwich, a soup, a portable breakfast, something from the bakery, or a drink to carry. Each category includes our own notes on flavor and pairing, plus the details worth verifying at the café. No prices or calorie counts appear here because they were not supplied in the source data.</p></PageIntro><div className="grid">{menu.categories.map(category=><Link className="category-card" key={category.slug} href={`/menu/${category.slug}`}><p className="eyebrow">{category.name}</p><h2>{category.name}</h2><p>{category.intro.slice(0,130)}…</p><span className="text-link">Explore category →</span></Link>)}</div></main>; }
-=======
-import Link from 'next/link';
-import menu from '@/lib/menu';
-import PageIntro from '@/components/PageIntro';
-export const metadata = { title: 'Au Bon Pain Menu Categories' };
-export default function MenuPage(){ return <main className="container"><PageIntro eyebrow="Browse before you order" title="The Au Bon Pain menu, organized for real decisions."><p>We group the menu the way people tend to think about it: a warm sandwich, a soup, a portable breakfast, something from the bakery, or a drink to carry. Each category includes our own notes on flavor and pairing, plus the details worth verifying at the café. No prices or calorie counts appear here because they were not supplied in the source data.</p></PageIntro><div className="grid">{menu.categories.map(category=><Link className="category-card" key={category.slug} href={`/menu/${category.slug}`}><p className="eyebrow">{category.name}</p><h2>{category.name}</h2><p>{category.intro.slice(0,130)}…</p><span className="text-link">Explore category →</span></Link>)}</div></main>; }
->>>>>>> 15b473b8448200c67420739b6263e97808d963ee

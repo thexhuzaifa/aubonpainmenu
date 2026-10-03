@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 export default function AuthorBox({ date = 'October 3, 2026' }: { date?: string }) { return <div className="author-box"><strong>Written by the AuBonPainMenu editorial team</strong><span>Last updated: {date}</span></div>; }
-=======
-export default function AuthorBox({ date = 'October 3, 2026' }: { date?: string }) { return <div className="author-box"><strong>Written by the AuBonPainMenu editorial team</strong><span>Last updated: {date}</span></div>; }
->>>>>>> 15b473b8448200c67420739b6263e97808d963ee
